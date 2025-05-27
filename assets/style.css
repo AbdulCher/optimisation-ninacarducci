@@ -1,3 +1,5 @@
+
+
 body {
 	max-width: 1920px;
 	margin: auto;
@@ -26,7 +28,7 @@ header {
 nav ul {
 	display: flex;
 	list-style-type: none;
-	/*font-size: 14px;*/
+	font-size: 18px;
 	margin-bottom: 0;
 }
 
@@ -91,10 +93,6 @@ nav a {
 	font-size: 14px;
 }
 
-/*#gallery {
-	/*	min-height: 100vh; 
-}
-	*/
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -131,7 +129,7 @@ nav a {
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
-	border-radius: 00%;
+	border-radius: 0;
 	justify-content: center;
 	align-items: center;
 	display: flex;
@@ -139,17 +137,16 @@ nav a {
 }
 
 .quote {
-	font-family: 'Spectral';
-	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
-.quote__text {
-	font-family: Spectral;
+.spectral-italic {
+	font-family: 'Spectral';
 	font-style: italic;
+}
+.quote__text {
 	font-weight: 300;
-
 }
 .quote__author {
 	font-family: Spectral;
@@ -322,15 +319,15 @@ input[type="submit"] {
 }
 
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header .nav, header .nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;

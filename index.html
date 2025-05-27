@@ -5,16 +5,13 @@
 	<meta name="description" content="Site de la photographe Nina.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Site de la photographe Nina Carducci</title>
-	<!--<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">-->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="./assets/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
 </head>
+
 <body>
 	<header>
 		<h1 class="name">Nina Carducci</h1>
@@ -22,10 +19,10 @@
 			<ul>
 				<li><a href="#about">À propos</a></li>
 				<li><a href="#gallery">Galerie</a></li>
-				<li><a href="#services">Service</a></li>
+				<li><a href="#services">Services</a></li>
 				<li><a href="#contact">Contact</a></li>
 				<li><a href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" class="social-link">
-					<img src="assets/images/instagram.png" alt=""></a>
+					<img src="assets/images/instagram.png" alt="Icône Instagram"></a>
 				</li>
 			</ul>
 		</nav>
@@ -35,7 +32,10 @@
 		<div id="carrousel">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" 
+						data-bs-slide-to="0" class="active" aria-current="true" 
+						aria-label="Slide 1">
+					</button>
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
@@ -62,11 +62,11 @@
 		</div>
 		<section id="about">
 			<div class="picture left">
-				<img src="./assets/images/nina.webp">
+				<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
-				<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</h6>
+				<span class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</span>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
@@ -89,7 +89,7 @@
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</h1>
+						<span class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</span>
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
@@ -132,10 +132,12 @@
 				</article>
 			</div>
 		</section>
-		<div class="quote">
+		<div class="quote spectral-italic">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
+					<span class="quote__text spectral-italic">
+						De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie.
+					</span>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
@@ -143,10 +145,10 @@
 		<section id="contact">
 			<div class="container">
 				<div class="form-container">
-					<h3>Une question ? Une demande de devis ?</h3>
+					<h2>Une question ? Une demande de devis ?</h2>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
-					<form action="" method="post">
-						<label for="name">Nom</label>
+					<form action="TODO" method="post">
+						<label for="nom">Nom</label>
 						<input type="text" name="nom" id="nom">
 						<label for="email">Email</label>
 						<input type="email" name="email" id="email">
@@ -156,10 +158,18 @@
 					</form>
 				</div>
 				<div class="picture right">
-					<img src="./assets/images/camera.webp">
+					<img src="./assets/images/camera.webp" alt="image d'une caméra">
 				</div>
 			</div>
 		</section>
 	</main>
+	<footer>
+		<!--TODO-->
+	</footer>
+	
+	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+	<script src="./assets/maugallery.js" defer></script>
+	<script src="./assets/scripts.js" defer></script>
 </body>
 </html>
