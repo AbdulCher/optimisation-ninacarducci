@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Site de la photographe Nina.">
+	<meta name="description" content="Site de la photographe Nina Carducci.">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Site de la photographe Nina Carducci</title>
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<title>Site de Nina Carducci</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css ">
+	<link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 	</header>
 
 	<main>
-		<div id="carrousel">
+		<section id="carrousel">
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" 
@@ -41,13 +41,13 @@
 				</div>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="photo de dos d'un homme tenant un sac">
+						<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100 img-fluid" alt="photo de dos d'un homme tenant un sac">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="photo de jeunes qui font la fête">
+						<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100 img-fluid" alt="photo de jeunes qui font la fête">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100" alt="photo de mariés qui dansent autour de gens">
+						<img src="./assets/images/slider/edward-cisneros.webp" class="d-block w-100 img-fluid" alt="photo de mariés qui dansent autour de gens">
 					</div>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -59,14 +59,14 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</div>
+		</section>
 		<section id="about">
 			<div class="picture left">
 				<img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
 			</div>
 			<div id="about-me">
 				<h2 class="about-me__title">A propos de moi</h2>
-				<span class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</span>
+				<span class="about-me__introduction spectral-italic">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</span>
 				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
@@ -74,22 +74,23 @@
 		<section id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
+				<!---Ajout de img-fluid pour s'assurer que les images reste dans leur colonne-->
 				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="image de concert"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="image d'un homme élégant"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="image de femme souriante"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="photo de mains qui se tiennent"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="portrait d'un homme qui ferme les-yeux"/>
-					<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="photo de mariés"/>
-					<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="portrait d'une femme qui porte des lunettes"/>
-					<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill.webp" alt="image de concert"/>
-					<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="image d'une femme souriante devant son ordinateur"/>
+					<img data-gallery-tag="Concert" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/concerts/aaron-paul.webp" alt="image de concert"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/entreprise/ali-morshedlou.webp" alt="image d'un homme élégant"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/entreprise/jason-goodman.webp" alt="image de femme souriante"/>
+					<img data-gallery-tag="Mariages" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/mariage/hannah-busing.webp" alt="photo de mains qui se tiennent"/>
+					<img data-gallery-tag="Portrait" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/portraits/ade-tunji.webp" alt="portrait d'un homme qui ferme les-yeux"/>
+					<img data-gallery-tag="Mariages" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/mariage/jakob-owens.webp" alt="photo de mariés"/>
+					<img data-gallery-tag="Portrait" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/portraits/nino-van-prattenburg.webp" alt="portrait d'une femme qui porte des lunettes"/>
+					<img data-gallery-tag="Concert" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/concerts/austin-neill.webp" alt="image de concert"/>
+					<img data-gallery-tag="Entreprises" class="gallery-item img-fluid d-block w-100" src="./assets/images/gallery/entreprise/mateus-campos-felipe.webp" alt="image d'une femme souriante devant son ordinateur"/>
 				</div>
 			</div>
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<span class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</span>
+						<span class="quote__text spectral-italic">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</span>
 					</blockquote>
 					<figcaption class="quote__author">- Richard Avedon</figcaption>
 				</figure>
@@ -132,16 +133,19 @@
 				</article>
 			</div>
 		</section>
-		<div class="quote spectral-italic">
-			<figure>
-				<blockquote>
-					<span class="quote__text spectral-italic">
-						De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie.
-					</span>
-				</blockquote>
-				<figcaption class="quote__author">- Richard Avedon</figcaption>
-			</figure>
-		</div>
+		<figure class="quote spectral-italic">
+			<blockquote>
+				<span class="quote__text spectral-italic">
+					De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie.
+				</span>
+			</blockquote>
+			<figcaption class="quote__author">- Richard Avedon</figcaption>
+		</figure>
+		
+		
+	</main>
+	<footer>
+		<!--TODO-->
 		<section id="contact">
 			<div class="container">
 				<div class="form-container">
@@ -162,14 +166,11 @@
 				</div>
 			</div>
 		</section>
-	</main>
-	<footer>
-		<!--TODO-->
 	</footer>
 	
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
-	<script src="./assets/maugallery.js" defer></script>
-	<script src="./assets/scripts.js" defer></script>
+	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="./assets/maugallery.js"></script>
+	<script src="./assets/scripts.js"></script>
 </body>
 </html>

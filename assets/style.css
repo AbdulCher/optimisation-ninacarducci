@@ -48,6 +48,8 @@ nav a {
 #about {
 	display: flex;
 	background-color: #F6D2B8;
+	
+	
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
@@ -69,45 +71,48 @@ nav a {
 	margin: 0 20px;
 	z-index: 0;
 }
-
 .picture img {
 	width: 100%;
-
+	height: 100%;
+	object-fit: cover;
 }
 #about-me {
-	flex: 2
+	flex: 2;
 }
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
-	font-size: 30px;
 }
 .about-me__introduction {
-	font-family: 'Spectral';
+	display: flex;
 	font-weight: 800;
-	font-style: italic;
-	width: 60%;
+	font-size: 17px;
+	width: 60%; 
 }
 #about-me p {
-	width: 80%;
-	font-size: 14px;
+	width: 80%; 
+	margin-top: 5px;
 }
 
 .title{
 	text-align: center;
 	padding-block: 2em;
 }
+
+
 .gallery .nav {
 	justify-content: center;
-}
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
-	background-color: #BEB45A;
-	border-radius:0 ;
 }
 .nav-pills .nav-link {
 	color: #000
 }
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: #fff;
+	background-color: #BEB45A;
+	border-radius: 0; 
+}
+
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
@@ -119,13 +124,27 @@ nav a {
 	padding-bottom: 100%;
 
 }
+
+
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	padding: .5em;
+	padding: 0.5em;
 }
+	
+	/*.gallery-item {
+		
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: 100%;
+	object-fit: cover;
+	
+}*/
+	
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -147,6 +166,7 @@ nav a {
 }
 .quote__text {
 	font-weight: 300;
+	font-size: 34px;
 }
 .quote__author {
 	font-family: Spectral;
@@ -174,7 +194,6 @@ nav a {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
-
 }
 
 .service {
@@ -211,8 +230,7 @@ nav a {
 	z-index: -1;
 }
 .form-container {
-	flex : 2;
-
+	flex: 2;
 }
 form {
 	display: flex;
@@ -220,7 +238,6 @@ form {
 	width: 70%;
 	align-items: flex-start;
 }
-
 form input {
 	width: 100%;
 	background-color: transparent;
