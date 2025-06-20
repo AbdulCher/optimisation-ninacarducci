@@ -1,26 +1,16 @@
-/* ------------------------------------ */
-/* ========== GÉNÉRAL ========== */
-/* ------------------------------------ */
-
 body {
 	max-width: 1920px;
 	margin: auto;
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
 }
-
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
-
 .title {
 	text-align: center;
 }
-
-/* ------------------------------------ */
-/* ========== HEADER ========== */
-/* ------------------------------------ */
 
 header {
 	background-color: white;
@@ -33,30 +23,22 @@ header {
 	padding-block: 30px;
 	align-items: center;
 }
-
 nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 18px;
 	margin-bottom: 0;
 }
-
 nav li {
 	padding-inline: 10px;
 }
-
 nav a {
 	text-decoration: none;
 	color: #000;
 }
-
 .social-link img {
 	width: 20px;
 }
-
-/* ------------------------------------ */
-/* ========== À PROPOS (ABOUT) ========== */
-/* ------------------------------------ */
 
 #about {
 	display: flex;
@@ -65,7 +47,6 @@ nav a {
 	padding-block: 100px;
 	position: relative;
 }
-
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -76,43 +57,33 @@ nav a {
 	left: 0;
 	z-index: -1;
 }
-
 .picture {
 	flex: 1;
 	margin: 0;
 	z-index: 0;
 }
-
 .picture img {
 	width: 100%;
 	height: 330px;
 	object-fit: cover;
 }
-
 #about-me {
 	flex: 2;
 }
-
 .about-me__title {
 	margin-top: 0.5em;
 	margin-bottom: 20px;
 }
-
 .about-me__introduction {
 	display: flex;
 	font-weight: 800;
 	font-size: 17px;
 	width: 80%;
 }
-
 #about-me p {
 	width: 100%;
 	margin-top: 5px;
 }
-
-/* ------------------------------------ */
-/* ========== GALERIE ========== */
-/* ------------------------------------ */
 
 .gallery img {
 	cursor: pointer;
@@ -122,26 +93,16 @@ nav a {
 	object-fit: cover;
 }
 
-/* .gallery img:hover {
-	transform: scale(1.05);
-	filter: brightness(1.1);
-} */
-
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
-
 .item-column::after {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
 }
-
-/* ------------------------------------ */
-/* ========== FILTRES ========== */
-/* ------------------------------------ */
 
 #gallery-filters .nav-link.active {
 	background-color: #BEB45A;
@@ -149,21 +110,15 @@ nav a {
 	border-radius: 0;
 	font-weight: 600;
 }
-
 .nav-pills .nav-link {
 	color: #000;
 }
-
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius: 0;
 }
-
-/* ------------------------------------ */
-/* ========== LIGHTBOX (mauGallery) ========== */
-/* ------------------------------------ */
 
 .mg-prev,
 .mg-next {
@@ -176,48 +131,35 @@ nav a {
 	font-size: 24px;
 }
 
-/* ------------------------------------ */
-/* ========== CITATION (QUOTE) ========== */
-/* ------------------------------------ */
-
 .quote {
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
-
 .spectral-italic {
 	font-family: 'Spectral';
 	font-style: italic;
 }
-
 .quote__text {
 	font-weight: 300;
 	font-size: 34px;
 }
-
 .quote__author {
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
 }
 
-/* ------------------------------------ */
-/* ========== SERVICES ========== */
-/* ------------------------------------ */
-
 #services {
 	margin: auto;
 	background-color: #A8D5D8;
 	position: relative;
 }
-
 #services .container {
 	justify-content: space-between;
 	display: flex;
 	padding: 2em 0;
 }
-
 #services .container::before {
 	content: ' ';
 	background-color: #1C6474;
@@ -228,7 +170,6 @@ nav a {
 	left: 0;
 	z-index: 0;
 }
-
 .service {
 	background-color: white;
 	max-width: 390px;
@@ -241,10 +182,6 @@ nav a {
 	z-index: 1;
 }
 
-/* ------------------------------------ */
-/* ========== CONTACT ========== */
-/* ------------------------------------ */
-
 #contact {
 	margin: auto;
 	background-color: #D8D3A8;
@@ -252,11 +189,9 @@ nav a {
 	padding-inline: 100px;
 	padding-block: 100px;
 }
-
 #contact .container {
 	display: flex;
 }
-
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -267,18 +202,15 @@ nav a {
 	right: 0;
 	z-index: -1;
 }
-
 .form-container {
 	flex: 2;
 }
-
 form {
 	display: flex;
 	flex-direction: column;
 	width: 70%;
 	align-items: flex-start;
 }
-
 form input {
 	width: 100%;
 	background-color: transparent;
@@ -286,7 +218,6 @@ form input {
 	height: 2.5em;
 	margin-bottom: 20px;
 }
-
 form textarea {
 	width: 100%;
 	background-color: transparent;
@@ -296,31 +227,23 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
-
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em;
 }
 
-/* ------------------------------------ */
-/* ========== RESPONSIVE ========== */
-/* ------------------------------------ */
-
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
 	}
-
 	#about,
 	#contact .container {
 		align-items: center;
 	}
-
 	.about-me__title {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-
 	#about-me h6,
 	#about-me p {
 		width: 100%;
@@ -331,11 +254,9 @@ input[type="submit"] {
 	#about {
 		flex-direction: column;
 	}
-
 	.picture {
 		width: 50%;
 	}
-
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -345,27 +266,22 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
-
 	.about-me__title {
 		text-align: center;
 		margin-top: 1em;
 	}
-
 	#services .container {
 		flex-direction: column;
 	}
-
 	.service {
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		margin: 2em 0;
 	}
-
 	.service__description {
 		margin-bottom: 1em;
 	}
-
 	#services .container::before {
 		width: 30%;
 		height: 100%;
@@ -374,7 +290,6 @@ input[type="submit"] {
 		left: auto;
 		z-index: 0;
 	}
-
 	#contact .container {
 		flex-direction: column;
 	}
@@ -382,7 +297,6 @@ input[type="submit"] {
 	#contact .picture.right {
 		margin-top: 1em;
 	}
-
 	.picture.right::before {
 		width: 100%;
 		height: 30%;
@@ -398,42 +312,37 @@ input[type="submit"] {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-
 	header .nav,
 	header .nav ul {
 		width: 100%;
 		padding: 0;
 	}
-
 	header .nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
 	}
-
+	.gallery img {
+		height: 500px;
+	}
 	.picture.left::before,
 	.picture.right::before {
 		height: 150px;
 	}
-
 	#services .container {
 		align-items: center;
 	}
-
 	.service {
 		max-width: 90%;
 	}
-
 	#about,
 	#contact {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
-
 	form {
 		width: 100%;
 	}
-
 	.picture {
 		width: 80%;
 	}
