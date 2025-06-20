@@ -23,6 +23,12 @@ header {
 	padding-block: 30px;
 	align-items: center;
 }
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Inter', sans-serif;
+}
 nav ul {
 	display: flex;
 	list-style-type: none;
@@ -69,6 +75,7 @@ nav a {
 }
 #about-me {
 	flex: 2;
+	margin-left: 10px;
 }
 .about-me__title {
 	margin-top: 0.5em;
@@ -83,6 +90,7 @@ nav a {
 #about-me p {
 	width: 100%;
 	margin-top: 5px;
+	
 }
 
 .gallery img {
@@ -139,10 +147,14 @@ nav a {
 .spectral-italic {
 	font-family: 'Spectral';
 	font-style: italic;
+	
 }
 .quote__text {
-	font-weight: 300;
+	font-family: 'Spectral';
+	font-style: italic;
+	font-weight: 100;
 	font-size: 34px;
+	
 }
 .quote__author {
 	font-family: Spectral;
@@ -231,7 +243,11 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em;
 }
-
+.cordonnes {
+	display: flex;
+	margin-left: 10px;
+	
+}
 @media all and (max-width: 1180px) {
 	.picture {
 		flex: 2;
