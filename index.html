@@ -20,13 +20,10 @@
 	<title>Mon portfolio de photographe</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/style.css">
-	<!-- Pré-connexion aux serveurs de Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-	<!-- Préchargement (optionnel) -->
-	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:...&display=swap" onload="this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:...&display=swap"></noscript>
 </head>
 
 <body>
@@ -182,26 +179,27 @@
 	</main>
 	<footer>
 		<section id="contact">
-			<div itemscope itemtype="https://schema.org/LocalBusiness" class="cordonnes">
-				<p>
-					<span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-					<span itemprop="streetAddress">Adresse : 123 Rue de l’Exemple,</span>
-					<span itemprop="postalCode">75000</span> <span itemprop="addressLocality">Paris.</span>
-
-					<meta itemprop="dayOfWeek" content="Monday">
-					<meta itemprop="dayOfWeek" content="Tuesday">
-					<meta itemprop="dayOfWeek" content="Wednesday">
-					<meta itemprop="dayOfWeek" content="Thursday">
-					<meta itemprop="dayOfWeek" content="Friday"><br>
-					<span>Horraire : Appel téléphonique du lundi au vendredi : </span>
-					<time itemprop="opens" datetime="09:00">9h00</time> - 
-					<time itemprop="closes" datetime="18:00">18h00</time><br>
-					<span> Tél : <a href="tel:+33123456789" itemprop="telephone">01 23 45 67 89</a></span>
-				</p>
-			</div>
 			<div class="container">
 				<div class="form-container">
 					<h2>Une question ? Une demande de devis ?</h2>
+					<div itemscope itemtype="https://schema.org/LocalBusiness">
+						<p>
+							<span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+							<span itemprop="streetAddress">Adresse : 68 avenue Alsace Lorraine,</span>
+							<span itemprop="postalCode">33200</span> <span itemprop="addressLocality">Bordeaux.</span>
+
+							<meta itemprop="dayOfWeek" content="Monday">
+							<meta itemprop="dayOfWeek" content="Tuesday">
+							<meta itemprop="dayOfWeek" content="Wednesday">
+							<meta itemprop="dayOfWeek" content="Thursday">
+							<meta itemprop="dayOfWeek" content="Friday"><br>
+							
+							<span>Horraire : Appel téléphonique du lundi au vendredi : </span>
+							<time itemprop="opens" datetime="09:00">10h00</time> - 
+							<time itemprop="closes" datetime="18:00">19h00</time><br>
+							<span> Tél : <a href="tel:+33556677889" itemprop="telephone">05 56 67 78 89</a></span>
+						</p>
+					</div>
 					<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 					<form action="TODO" method="post">
 						<label for="nom">Nom</label>
@@ -217,10 +215,10 @@
 					<img src="./assets/images/camera.webp" class="img-fluid"  loading="lazy" alt="image d'une caméra">
 				</div>
 			</div>
-			
 		</section>
 	</footer>
 	
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js" defer></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous" defer></script>
   	<script src="https://cdn.jsdelivr.net/npm/enhanced-mauGallery/dist/maugallery.bundle.min.js" defer></script>
 	<script src="./assets/gallery.js" defer></script>
