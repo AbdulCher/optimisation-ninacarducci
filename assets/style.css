@@ -126,6 +126,7 @@ nav a {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius: 0;
+	filter: contrast(200%);
 }
 
 .mg-prev,
