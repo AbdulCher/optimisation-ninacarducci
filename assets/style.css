@@ -17,13 +17,12 @@ header {
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: contrast(1) drop-shadow(0 0 4px rgba(0,0,0,0.8));
+  filter: drop-shadow(0 0 2px rgba(67, 62, 62, 0.8));
   width: 2.5rem; height: 2.5rem; background-size: 100% 100%;
-  opacity: 4; transition: opacity 0.3s ease; 
+  opacity: 1; transition: opacity 0.3s ease; 
 }
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-  filter: invert(100%);
   opacity: 1;
 }
 
