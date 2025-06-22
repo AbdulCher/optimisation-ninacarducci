@@ -19,10 +19,11 @@ header {
 .carousel-control-next-icon {
   filter: contrast(1) drop-shadow(0 0 4px rgba(0,0,0,0.8));
   width: 2.5rem; height: 2.5rem; background-size: 100% 100%;
-  opacity: 4; transition: opacity 0.3s ease;
+  opacity: 4; transition: opacity 0.3s ease; 
 }
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
+  filter: invert(100%);
   opacity: 1;
 }
 
@@ -86,7 +87,7 @@ nav a {
 }
 
 #gallery-filters .nav-link.active {
-	background-color: #8d832f; color: #fff;
+	background-color: #5A531C; color: #fff;
 	border-radius: 0; font-weight: 600;
 }
 .nav-pills .nav-link {
@@ -94,7 +95,7 @@ nav a {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-	color: #fff; background-color: #BEB45A; border-radius: 0;
+	color: #fff; background-color: #8d832f; border-radius: 0;
 }
 
 .mg-prev,
@@ -165,6 +166,11 @@ input[type="submit"] {
 }
 .cordonnes {
 	display: flex; margin-left: 10px;
+}
+
+.form-container a {
+	color: #000;
+	text-decoration: none;
 }
 @media all and (max-width: 1180px) {
 	.picture {
