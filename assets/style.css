@@ -15,17 +15,30 @@ header {
 	padding-inline: 100px; padding-block: 30px; align-items: center;
 }
 
-.carousel-control-prev-icon,
+.carousel-control-prev-icon {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 8 8"%3E%3Cpath d="M5.5 0L1.5 4l4 4 .7-.7L3 4l3.2-3.3L5.5 0z"/%3E%3C/svg%3E');
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
 .carousel-control-next-icon {
-  filter: drop-shadow(0 0 6px rgba(97, 92, 92, 2));
-  width: 2.5rem; height: 2.5rem; background-size: 100% 100%;
-  opacity: 1; transition: opacity 0.3s ease; border: 2px solid #fff; border-radius: 10%;
-  box-sizing: border-box; background-color: rgba(0,0,0,0.5);
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 8 8"%3E%3Cpath d="M2.5 0l4 4-4 4-.7-.7L5 4 1.8.7 2.5 0z"/%3E%3C/svg%3E');
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
 }
-.carousel-control-prev-icon:hover,
-.carousel-control-next-icon:hover {
-  opacity: 1;
-}
+
 
 h1,
 h2,
